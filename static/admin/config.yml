@@ -22,5 +22,7 @@ collections: # A list of collections the CMS should be able to edit
     label: 'Menu' # Used in the UI, ie.: "New Post"
     folder: 'content/menu'
     create: true
+    editor:
+      preview: false
     fields:
       - {label: items, name: items, widget: list, fields: [{label: title, name: title}, {label: link, name: link, widget: text}]}
