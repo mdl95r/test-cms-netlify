@@ -1,4 +1,11 @@
-nav_items: 
-  - {label: 'Home', path: '/'}
-  - {label: 'Products', path: '/products/'}
-  - {label: 'News', path: '/news/'}
+nav_items:
+  - label: about project
+    path: "#"
+  - label: about us
+    path: "#"
+  - label: media
+    path: "#"
+  - label: support us
+    path: "#"
+  - label: other projects
+    path: "#"
