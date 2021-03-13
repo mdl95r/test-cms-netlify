@@ -23,8 +23,9 @@ collections:
             name: section
             widget: list
             fields:
-              - { label: 'Название секции', name: 'title', widget: 'string' }
+              - { label: 'Название секции', name: 'title', widget: 'string',  }
               - { label: 'Текст', name: 'text', widget: 'markdown' }
+              - { label: 'Скрыть/Показать секцию', name: 'hide', widget: 'boolean' }
   - name: banners
     label: Баннеры
     files:
