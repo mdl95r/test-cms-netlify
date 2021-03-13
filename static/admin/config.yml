@@ -12,13 +12,16 @@ slug:
   sanitize_replacement: "-"
 
 collections:
-  - name: 'sections'
-    label: 'Блоки'
-    folder: 'content/sections'
-    create: true
-    fields:
-      - { label: 'Название блока', name: 'title', widget: 'string' }
-      - { label: 'Текст', name: 'text', widget: 'markdown' }
+  - name: sections
+    label: Секции сайта
+    files:
+      - file: data/sections/sections.yml
+        label: Секция
+        name: section
+        widget: list
+        fields:
+          - { label: 'Название секции', name: 'title', widget: 'string' }
+          - { label: 'Текст', name: 'text', widget: 'markdown' }
   - name: settings
     label: Общие настройки
     files:
@@ -51,4 +54,17 @@ collections:
             fields:
               - {label: Изображение, name: img, widget: image}
               - {label: Описание изображения, name: alt, widget: string}
+  # - name: html
+  #   label: HTML блок
+  #   files:
+  #     - file: data/hero/hero.yml
+  #       label: Баннеры
+  #       name: banners
+  #       fields:
+  #         - label: Баннер
+  #           name: banner
+  #           widget: list
+  #           fields:
+  #             - {label: Изображение, name: img, widget: image}
+  #             - {label: Описание изображения, name: alt, widget: string}
 
