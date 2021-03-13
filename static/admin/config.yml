@@ -27,12 +27,22 @@ collections: # A list of collections the CMS should be able to edit
     label: Settings
     files:
       - file: data/settings/navigation.yml
-        label: Navigation
+        label: Навигация
         name: navigation
         fields:
-          - label: Navigation
+          - label: Меню верхнее
             name: nav_items
             widget: list
             fields:
-              - {label: Label, name: label, widget: string}
-              - {label: Path, name: path, widget: string}
+              - {label: Название, name: label, widget: string}
+              - {label: Путь, name: path, widget: string}
+      - file: data/settings/seo.yml
+        label: SEO настройки
+        name: seo
+        fields:
+          - label: Настройки
+            name: seo_options
+            widget: string
+            fields:
+              - {label: Название сайта (title), name: title, widget: string}
+              - {label: Описание сайта (Description), name: description, widget: string}
