@@ -69,6 +69,6 @@ collections:
             name: social
             widget: list
             fields:
-              - {label: Название, name: title, widget: string}
-              - {label: Ссылка, name: link, widget: string}
+              - {label: Vkontakte, name: link, widget: string}
+              - {label: ModDb, name: link, widget: string}
 
