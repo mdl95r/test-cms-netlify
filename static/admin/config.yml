@@ -58,17 +58,17 @@ collections:
         fields:
           - {label: Название сайта (title), name: title, widget: string}
           - {label: Описание сайта (Description), name: description, widget: string}
-  - name: socials
-    label: Социальные сети
+  - name: links
+    label: Ссылки
     files:
-      - file: data/socials/socials.yml
-        label: Социальные сети
-        name: socials
+      - file: data/links/links.yml
+        label: Ссылки
+        name: links
         fields:
-          - label: Социальная сеть
-            name: social
+          - label: Ссылка
+            name: link
             widget: list
             fields:
-              - {label: Vkontakte, name: link, widget: string}
-              - {label: ModDb, name: link, widget: string}
+              - {label: Название, name: title, widget: string}
+              - {label: Ссылка, name: link, widget: string}
 
