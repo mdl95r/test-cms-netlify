@@ -45,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: hero
     label: Баннеры
     widget: list
-    file: data/hero/hero.yml
+    folder: 'content/hero'
     fields:
       - {label: Изображение, name: img, widget: image}
       - {label: Описание изображения, name: alt, widget: string}
