@@ -44,7 +44,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Описание сайта (Description), name: description, widget: string}
   - name: hero
     label: Баннеры
-    widget: list
+    create: true
     folder: 'content/hero'
     fields:
       - {label: Изображение, name: img, widget: image}
