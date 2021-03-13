@@ -58,17 +58,17 @@ collections:
         fields:
           - {label: Название сайта (title), name: title, widget: string}
           - {label: Описание сайта (Description), name: description, widget: string}
-  # - name: html
-  #   label: HTML блок
-  #   files:
-  #     - file: data/hero/hero.yml
-  #       label: Баннеры
-  #       name: banners
-  #       fields:
-  #         - label: Баннер
-  #           name: banner
-  #           widget: list
-  #           fields:
-  #             - {label: Изображение, name: img, widget: image}
-  #             - {label: Описание изображения, name: alt, widget: string}
+  - name: socials
+    label: Социальные сети
+    files:
+      - file: data/socials/socials.yml
+        label: Социальные сети
+        name: socials
+        fields:
+          - label: Социальная сеть
+            name: social
+            widget: list
+            fields:
+              - {label: Название, name: title, widget: string}
+              - {label: Ссылка, name: link, widget: string}
 
