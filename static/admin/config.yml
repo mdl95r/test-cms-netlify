@@ -78,10 +78,7 @@ collections:
       - file: data/html/html.yml
         label: html блок
         name: code
+        creature: true
         fields:
-          - label: html блок
-            name: code
-            widget: list
-            fields:
-              - {label: html код, name: code, widget: code, required: true}
+          - {label: html код, name: code, widget: code, required: true}
 
