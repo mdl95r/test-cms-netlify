@@ -24,7 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Categories', name: 'categories', widget: 'list' }
   - name: settings
-    label: Settings
+    label: Общие настройки
     files:
       - file: data/settings/navigation.yml
         label: Навигация
@@ -42,3 +42,10 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Название сайта (title), name: title, widget: string}
           - {label: Описание сайта (Description), name: description, widget: string}
+  - name: hero
+    label: Баннеры
+    widget: list
+    file: data/hero/hero.yml
+    fields:
+      - {label: Изображение, name: img, widget: image}
+      - {label: Описание изображения, name: alt, widget: string}
