@@ -52,7 +52,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: Баннер
             name: banner
             widget: list
-              fields:
-                - {label: Изображение, name: img, widget: image}
-                - {label: Описание изображения, name: alt, widget: string}
+            fields:
+              - {label: Изображение, name: img, widget: image}
+              - {label: Описание изображения, name: alt, widget: string}
 
