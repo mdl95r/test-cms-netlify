@@ -23,9 +23,10 @@ collections:
             name: section
             widget: list
             fields:
-              - { label: 'Название секции', name: 'title', widget: 'string',  }
-              - { label: 'Текст', name: 'text', widget: 'markdown' }
-              - { label: 'Скрыть/Показать секцию', name: 'hide', widget: 'boolean' }
+              - { label: 'Название секции', name: 'title', widget: 'string', required: true}
+              - { label: 'Текст', name: 'text', widget: 'markdown'}
+              - { label: 'Добавить html', name: 'html', widget: 'relation', collection: code}
+              - { label: 'Скрыть/Показать секцию', name: 'hide', widget: 'boolean', hint: Будет ли отображаться секция на сайте}
   - name: banners
     label: Баннеры
     files:
@@ -37,7 +38,7 @@ collections:
             name: banner
             widget: list
             fields:
-              - {label: Изображение, name: img, widget: image}
+              - {label: Изображение, name: img, widget: image, required: true, hint: выбрать изображение}
               - {label: Описание изображения, name: alt, widget: string}
   - name: settings
     label: Общие настройки
@@ -50,14 +51,14 @@ collections:
             name: nav_items
             widget: list
             fields:
-              - {label: Название, name: label, widget: string}
-              - {label: Путь, name: path, widget: string}
+              - {label: Название, name: label, widget: string, required: true}
+              - {label: Путь, name: path, widget: string, hint: По умолчанию путь "#"}
       - file: data/settings/seo.yml
         label: SEO настройки
         name: seo
         fields:
-          - {label: Название сайта (title), name: title, widget: string}
-          - {label: Описание сайта (Description), name: description, widget: string}
+          - {label: Название сайта (title), name: title, widget: string, required: true}
+          - {label: Описание сайта (Description), name: description, widget: string, required: true}
   - name: links
     label: Ссылки
     files:
@@ -66,9 +67,21 @@ collections:
         name: links
         fields:
           - label: Ссылка
-            name: link
+            name: links
             widget: list
             fields:
-              - {label: Название, name: title, widget: string}
-              - {label: Ссылка, name: link, widget: string}
+              - {label: Название, name: title, widget: string, required: true}
+              - {label: Ссылка, name: link, widget: string, required: true}
+  - name: code
+    label: html блок
+    files:
+      - file: data/html/html.yml
+        label: html блок
+        name: code
+        fields:
+          - label: html блок
+            name: code
+            widget: list
+            fields:
+              - {label: html код, name: code, widget: code, required: true}
 
