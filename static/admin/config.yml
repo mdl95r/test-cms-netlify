@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - label: Настройки
             name: seo_options
-            widget: string
+            widget: object
             fields:
               - {label: Название сайта (title), name: title, widget: string}
               - {label: Описание сайта (Description), name: description, widget: string}
