@@ -23,11 +23,16 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Categories', name: 'categories', widget: 'list' }
-  - name: 'menu'
-    label: 'Menu' # Used in the UI, ie.: "New Post"
-    folder: 'content/menu'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - {label: items, name: items, widget: object, fields: [{label: title, name: title}, {label: link, name: link, widget: text}]}
+  - name: settings
+    label: Settings
+    files:
+      - file: data/settings/navigation.yml
+        label: Navigation
+        name: navigation
+        fields:
+          - label: Navigation
+            name: nav_items
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Path, name: path, widget: string}
