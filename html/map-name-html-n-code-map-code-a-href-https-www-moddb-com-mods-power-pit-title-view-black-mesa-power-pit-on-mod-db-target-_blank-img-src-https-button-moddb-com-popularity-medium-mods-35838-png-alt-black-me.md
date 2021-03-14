@@ -1,5 +1,5 @@
 ---
-name: Html для секций
+name: HTML для секций
 code:
   code: '<a href="https://www.moddb.com/mods/power-pit" title="View Black Mesa:
     Power pit on Mod DB" target="_blank"><img
