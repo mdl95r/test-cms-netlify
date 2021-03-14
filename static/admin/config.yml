@@ -25,7 +25,7 @@ collections:
             fields:
               - { label: 'Название секции', name: 'title', widget: 'string', required: true}
               - { label: 'Текст', name: 'text', widget: 'markdown'}
-              - { label: 'Добавить html', name: 'html', widget: 'relation', collection: code, searchFields: ["code"], displayFields: ["code"],  valueField: ""}
+              - { label: 'HTML код', name: 'code', widget: 'code'}
               - { label: 'Скрыть/Показать секцию', name: 'hide', widget: 'boolean', hint: Будет ли отображаться секция на сайте}
   - name: banners
     label: Баннеры
@@ -78,7 +78,7 @@ collections:
       - file: data/html/html.yml
         label: html блок
         name: code
-        create: true
+        widget: "hidden"
         fields:
           - {label: html код, name: code, widget: code, required: true}
 
