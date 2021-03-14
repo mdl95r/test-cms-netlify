@@ -25,7 +25,7 @@ collections:
             fields:
               - { label: 'Название секции', name: 'title', widget: 'string', required: true}
               - { label: 'Текст', name: 'text', widget: 'markdown'}
-              - { label: 'Добавить html', name: 'html', widget: 'relation', collection: code, searchFields: ["code"], displayFields: ["code"],  valueField: ""}
+              - { label: 'Добавить html', name: 'html', widget: 'relation', collection: code, searchFields: ["code"], displayFields: ["code"],  valueField: "code"}
               - { label: 'Скрыть/Показать секцию', name: 'hide', widget: 'boolean', hint: Будет ли отображаться секция на сайте}
   - name: banners
     label: Баннеры
