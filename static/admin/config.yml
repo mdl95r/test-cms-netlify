@@ -81,7 +81,7 @@ collections:
         name: code
         fields:
           - {label: html код, name: code, widget: code, required: true}
-    - name: authors
+  - name: authors
     label: Authors
     folder: "authors"
     create: true
