@@ -75,31 +75,29 @@ collections:
   - name: code
     label: html блок
     widget: "hidden"
-    files:
-      - file: data/html/html.yml
-        label: html блок
-        name: code
-        fields:
-          - {label: html код, name: code, widget: code, required: true}
-  - name: authors
-    label: Authors
-    folder: "authors"
+    folder: html
     create: true
     fields:
-      - {name: name, label: Name}
-      - {name: twitterHandle, label: "Twitter Handle"}
-      - {name: bio, label: Bio, widget: text}
-  - name: posts
-    label: Posts
-    folder: "posts"
-    create: true
-    fields:
-      - {name: title, label: Title}
-      - {name: body, label: Body, widget: markdown}
-      - name: author
-        label: Author
-        widget: relation
-        collection: authors
-        searchFields: [name, twitterHandle]
-        valueField: name
+      - {label: html код, name: code, widget: code, required: true}
+  # - name: authors
+  #   label: Authors
+  #   folder: "authors"
+  #   create: true
+  #   fields:
+  #     - {name: name, label: Name}
+  #     - {name: twitterHandle, label: "Twitter Handle"}
+  #     - {name: bio, label: Bio, widget: text}
+  # - name: posts
+  #   label: Posts
+  #   folder: "posts"
+  #   create: true
+  #   fields:
+  #     - {name: title, label: Title}
+  #     - {name: body, label: Body, widget: markdown}
+  #     - name: author
+  #       label: Author
+  #       widget: relation
+  #       collection: authors
+  #       searchFields: [name, twitterHandle]
+  #       valueField: name
 
