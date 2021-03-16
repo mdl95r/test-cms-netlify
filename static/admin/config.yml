@@ -71,10 +71,18 @@ collections:
           - {label: "О проекте", name: project, widget: object, fields: [
               {label: "Название", name: "heading", widget: string},
               {label: "Текст", name: "text", widget: "markdown"}]}
-          - {label: "О нас", name: aboutus, widget: object, fields: [
-              {label: "Название", name: "heading", widget: string},
-              {label: "Текст", name: "text", widget: "markdown"}
-            - {label: "Ссылки", name: "links", widget: "list", fields: [
-                {label: "Название", name: "title", widget: "string"}
-                {label: "Ссылка", name: "link", widget: "string"}}]]}
+          - {label: "О нас", name: aboutus, widget: object, 
+            fields: 
+              [
+                {label: "Название", name: "heading", widget: string},
+                {label: "Текст", name: "text", widget: "markdown"}
+                {label: "Ссылки", name: "links", widget: "list", 
+                fields: 
+                  [
+                    {label: "Название", name: "title", widget: "string"}
+                    {label: "Ссылка", name: "link", widget: "string"}
+                  ]
+                }
+              ]
+            }
 
