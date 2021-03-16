@@ -59,46 +59,26 @@ collections:
         fields:
           - {label: Название сайта (title), name: title, widget: string, required: true}
           - {label: Описание сайта (Description), name: description, widget: string, required: true}
-  - name: links
-    label: Ссылки
+  - name: "pages"
+    label: "Pages"
     files:
-      - file: data/links/links.yml
-        label: Ссылки
-        name: links
+      - file: "content/_index.md"
+        label: "Главная страница"
+        name: "home"
         fields:
-          - label: Ссылка
-            name: links
-            widget: list
-            fields:
-              - {label: Название, name: title, widget: string, required: true}
-              - {label: Ссылка, name: link, widget: string, required: true}
-  - name: code
-    label: html блок
-    widget: "hidden"
-    folder: html
-    create: true
-    fields:
-      - {label: Название блока, name: name, widget: string, required: true}
-      - {label: html код, name: code, widget: code, required: true}
-  # - name: authors
-  #   label: Authors
-  #   folder: "authors"
-  #   create: true
-  #   fields:
-  #     - {name: name, label: Name}
-  #     - {name: twitterHandle, label: "Twitter Handle"}
-  #     - {name: bio, label: Bio, widget: text}
-  # - name: posts
-  #   label: Posts
-  #   folder: "posts"
-  #   create: true
-  #   fields:
-  #     - {name: title, label: Title}
-  #     - {name: body, label: Body, widget: markdown}
-  #     - name: author
-  #       label: Author
-  #       widget: relation
-  #       collection: authors
-  #       searchFields: [name, twitterHandle]
-  #       valueField: name
+          - {label: Title, name: title, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: "Blurb", name: blurb, widget: object, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Intro", name: intro, widget: object, fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Products", name: products, widget: list, fields: [
+              {label: "Image", name: "image", widget: "image"},
+              {label: "Text", name: "text", widget: "text"}]}
+          - {label: "Values", name: "values", widget: "object", fields: [
+              {label: "Heading", name: "heading", widget: string},
+              {label: "Text", name: "text", widget: "text"}]}
 
