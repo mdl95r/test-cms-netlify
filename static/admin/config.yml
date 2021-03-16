@@ -49,8 +49,8 @@ collections:
               {label: "Ссылки", name: "links", widget: "list", fields: [
               {label: "Название", name: "title", widget: "string"},
               {label: "Ссылка", name: "link", widget: "string"}]}]}
-          - {label: "Секция медиа", name: media, widget: list, max: 6, add_to_top: true, collapsed: true, fields: [
-              {label: "Картинка", name: "img", widget: "image"}]}
+          - {label: "Секция медиа", name: media, widget: list,  fields: [
+              {label: "Картинка", name: "img", widget: "image", add_to_top: true, collapsed: true, max: 6}]}
   - name: banners
     label: Баннеры
     files:
