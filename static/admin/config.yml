@@ -74,8 +74,7 @@ collections:
           - {label: "О нас", name: aboutus, widget: object, fields: [
               {label: "Название", name: "heading", widget: string},
               {label: "Текст", name: "text", widget: "markdown"}
-                {label: "Ссылка", name: "links", widget: "list", fields: [
-                  {label: "Название", name: "title", widget: "string"}
-                  {label: "Сссылка", name: "link", widget: "string"}}]
-                ]}
+            - {label: "Ссылки", name: "links", widget: "list", fields: [
+                {label: "Название", name: "title", widget: "string"}
+                {label: "Ссылка", name: "link", widget: "string"}}]]}
 
