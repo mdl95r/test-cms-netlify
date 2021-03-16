@@ -12,21 +12,6 @@ slug:
   sanitize_replacement: "-"
 
 collections:
-  - name: sections
-    label: Секции сайта
-    files:
-      - file: data/sections/sections.yml
-        label: Секции
-        name: sections
-        fields:
-          - label: Секция
-            name: section
-            widget: list
-            fields:
-              - { label: 'Название секции', name: 'title', widget: 'string', required: true}
-              - { label: 'Текст', name: 'text', widget: 'markdown'}
-              - { label: 'Добавить html', name: 'html', widget: 'relation', collection: code, searchFields: ["name", "code"], displayFields: ["name", code"],  valueField: "name"}
-              - { label: 'Скрыть/Показать секцию', name: 'hide', widget: 'boolean', hint: Будет ли отображаться секция на сайте}
   - name: banners
     label: Баннеры
     files:
@@ -68,13 +53,20 @@ collections:
         fields:
           - {label: Название сайта (h1), name: title, widget: string}
           - {label: Лого мода, name: image, widget: image}
-          - {label: "О проекте", name: project, widget: object, fields: [
+          - {label: "Секция о проекте", name: project, widget: object, fields: [
               {label: "Название", name: "heading", widget: string},
               {label: "Текст", name: "text", widget: "markdown"}]}
-          - {label: "О нас", name: aboutus, widget: object, fields: [
+          - {label: "Секция о нас", name: aboutus, widget: object, fields: [
               {label: "Название", name: "heading", widget: string},
               {label: "Текст", name: "text", widget: "markdown"},
               {label: "Ссылки", name: "links", widget: "list", fields: [
               {label: "Название", name: "title", widget: "string"},
               {label: "Ссылка", name: "link", widget: "string"}]}]}
+          - {label: "Секция медиа", name: media, widget: object, fields: [
+              {label: "Картинка", name: "img", widget: image},
+              {label: "Картинка", name: "img", widget: image},
+              {label: "Картинка", name: "img", widget: image},
+              {label: "Картинка", name: "img", widget: image},
+              {label: "Картинка", name: "img", widget: image},
+              {label: "Картинка", name: "img", widget: "image"}]}
 
