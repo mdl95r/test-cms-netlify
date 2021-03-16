@@ -63,10 +63,5 @@ collections:
               {label: "Название", name: "title", widget: "string"},
               {label: "Ссылка", name: "link", widget: "string"}]}]}
           - {label: "Секция медиа", name: media, widget: object, fields: [
-              {label: "Картинка", name: "img", widget: image},
-              {label: "Картинка", name: "img", widget: image},
-              {label: "Картинка", name: "img", widget: image},
-              {label: "Картинка", name: "img", widget: image},
-              {label: "Картинка", name: "img", widget: image},
               {label: "Картинка", name: "img", widget: "image"}]}
 
