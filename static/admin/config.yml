@@ -49,8 +49,9 @@ collections:
               {label: "Ссылки", name: "links", widget: "list", fields: [
               {label: "Название", name: "title", widget: "string"},
               {label: "Ссылка", name: "link", widget: "string"}]}]}
-          - {label: "Секция медиа", name: media, widget: list,  fields: [
-              {label: "Картинка", name: "img", widget: "image", add_to_top: true, collapsed: true, max: 6}]}
+          - {label: "Секция медиа", name: media, widget: list, fields: [
+              {label: "Картинка", name: "img", widget: "image"},
+              {label: "Описание изображения", name: "alt", widget: "string"}]}
   - name: banners
     label: Баннеры
     files:
@@ -73,5 +74,27 @@ collections:
       - {label: "Превью поста", name: "image", widget: "object", required: false, fields: [{label: "Изображение", name: "img", widget: "image"}, {label: "Описание изображения", name: "alt", widget: "string"}, ]}
       - {label: "Дата публикации", name: "date", widget: "datetime"}
       - {label: "Текст", name: "body", widget: "markdown"}
+  - label: 'Home Section'
+    name: 'sections'
+    widget: 'list'
+    types:
+      - label: 'Carousel'
+        name: 'carousel'
+        widget: object
+        summary: '{{fields.header}}'
+        fields:
+          - { label: Header, name: header, widget: string, default: 'Image Gallery' }
+          - { label: Template, name: template, widget: string, default: 'carousel.html' }
+          - label: Images
+            name: images
+            widget: list
+            field: { label: Image, name: image, widget: image }
+      - label: 'Spotlight'
+        name: 'spotlight'
+        widget: object
+        fields:
+          - { label: Header, name: header, widget: string, default: 'Spotlight' }
+          - { label: Template, name: template, widget: string, default: 'spotlight.html' }
+          - { label: Text, name: text, widget: text, default: 'Hello World' }
 
 
