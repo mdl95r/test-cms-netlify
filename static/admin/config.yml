@@ -70,7 +70,7 @@ collections:
     create: true
     fields:
       - {label: "Название поста", name: "title", widget: "string", required: true}
-      - {label: "Превью поста", name: "image", widget: "list", required: false, fields: [{label: "Изображение", name: "img", widget: "image"}, {label: "Описание изображения", name: "alt", widget: "string"}, ]}
+      - {label: "Превью поста", name: "image", widget: "object", required: false, fields: [{label: "Изображение", name: "img", widget: "image"}, {label: "Описание изображения", name: "alt", widget: "string"}, ]}
       - {label: "Дата публикации", name: "date", widget: "datetime"}
       - {label: "Текст", name: "body", widget: "markdown"}
 

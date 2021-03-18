@@ -9,3 +9,5 @@ nav_items:
     path: "#"
   - label: other projects
     path: "#"
+  - label: blog
+    path: "/blog"
