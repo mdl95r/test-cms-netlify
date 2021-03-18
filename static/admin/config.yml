@@ -71,7 +71,7 @@ collections:
     fields:
       - {label: "Название поста", name: "title", widget: "string", required: true, hint: "Название поста"}
       - {label: "Дата публикации", name: "date", widget: "datetime"}
-      - {label: "Изображение", name: "image", widget: "image", required: false, fields: {label: "Описание изображения", name: "alt", widget: "string"}}
+      - {label: "Изображение", name: "image", widget: "list", required: false, fields: [{label: "Изображение", name: "img", widget: "image"}, {label: "Описание изображения", name: "alt", widget: "string"}, ]}
       - {label: "Текст", name: "body", widget: "markdown"}
 
 
