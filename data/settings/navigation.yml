@@ -10,4 +10,6 @@ nav_items:
   - label: other projects
     path: "#"
   - label: blog
-    path: "/blog"
+    path: /blog
+  - label: test-item
+    path: /test-item
