@@ -32,4 +32,19 @@ aboutus:
 
     ### Our social links:
   heading: about us
+media:
+  - img: /images/uploads/logov0.4-full-moddb_600.png
+    alt: alt
+  - img: /images/uploads/logov0.4-full-moddb_600.png
+    alt: alt
+  - img: /images/uploads/logov0.4-full-moddb_600.png
+    alt: alt
+  - img: /images/uploads/logov0.4-full-moddb_600.png
+    alt: alt
+  - img: /images/uploads/logov0.4-full-moddb_600.png
+    alt: alt
+  - img: /images/uploads/logov0.4-full-moddb_600.png
+    alt: alt
+  - img: /images/uploads/logov0.4-full-moddb_600.png
+    alt: alt
 ---
